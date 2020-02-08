@@ -102,6 +102,12 @@
       <LastGenOutput>Sandromic.cs</LastGenOutput>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sandromic.Model\Sandromic.Model.csproj">
+      <Project>{40072cea-92e4-4025-a801-7c3d8b6ba468}</Project>
+      <Name>Sandromic.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

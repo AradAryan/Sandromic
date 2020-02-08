@@ -3,27 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Sandromic.Model;
 
 namespace Sandromic.DAL
 {
     static public class Data
     {
         public static SandromicDBEntities sandromic = new SandromicDBEntities();
-        public static List<User> GetData()
+        public static List<UserModel> GetData()
         {
-            var test = sandromic.Users.ToList();
-            List<User> users = new List<User>();
-            foreach (var item in test)
+            
+            List<UserModel> users = new List<UserModel>();
+            foreach (var item in sandromic.Users)
             {
-                users.Add(new User
-                { 
+                users.Add(new UserModel
+                {
                     FirstName = item.FirstName,
-                    LastName=item.LastName,
-                    NationalCode
+                    LastName = item.LastName,
+                    NationalCode = item.UserName,
+                    IsActive = item.IsActive,
                 });
             }
-            var a = sandromic.Users.Count();
-            return null;
+            return users;
         }
     }
 }
