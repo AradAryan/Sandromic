@@ -41,6 +41,13 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <EntityDeploy Include="Sandromic.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Sandromic.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Sandromic.edmx.diagram">
+      <DependentUpon>Sandromic.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -58,6 +65,41 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Corporate.cs">
+      <DependentUpon>Sandromic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sandromic.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sandromic.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sandromic.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sandromic.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sandromic.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sandromic.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>Sandromic.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sandromic.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Sandromic.edmx</DependentUpon>
+      <LastGenOutput>Sandromic.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Sandromic.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Sandromic.edmx</DependentUpon>
+      <LastGenOutput>Sandromic.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
