@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandromic.UI", "Sandromic\Sandromic.UI.csproj", "{D320A807-4BE6-49BF-A84B-45228127FDC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandromic.DAL", "Sandromic.DAL\Sandromic.DAL.csproj", "{C91DDA15-04F9-46D1-8E42-FD9FB2736700}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandromic.BLL", "Sandromic.BLL\Sandromic.BLL.csproj", "{2EF95E8E-2717-42C3-A135-AAA15C4A6EFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandromic.Model", "Sandromic.Model\Sandromic.Model.csproj", "{40072CEA-92E4-4025-A801-7C3D8B6BA468}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D320A807-4BE6-49BF-A84B-45228127FDC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D320A807-4BE6-49BF-A84B-45228127FDC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D320A807-4BE6-49BF-A84B-45228127FDC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D320A807-4BE6-49BF-A84B-45228127FDC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C91DDA15-04F9-46D1-8E42-FD9FB2736700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C91DDA15-04F9-46D1-8E42-FD9FB2736700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C91DDA15-04F9-46D1-8E42-FD9FB2736700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C91DDA15-04F9-46D1-8E42-FD9FB2736700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EF95E8E-2717-42C3-A135-AAA15C4A6EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EF95E8E-2717-42C3-A135-AAA15C4A6EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EF95E8E-2717-42C3-A135-AAA15C4A6EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EF95E8E-2717-42C3-A135-AAA15C4A6EFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40072CEA-92E4-4025-A801-7C3D8B6BA468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40072CEA-92E4-4025-A801-7C3D8B6BA468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40072CEA-92E4-4025-A801-7C3D8B6BA468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40072CEA-92E4-4025-A801-7C3D8B6BA468}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23EA2D6A-5FC0-4F66-AB50-EA9742FB223B}
+	EndGlobalSection
+EndGlobal
