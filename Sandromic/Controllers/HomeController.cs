@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Sandromic.DAL;
 
 namespace Sandromic.Controllers
 {
@@ -10,6 +11,7 @@ namespace Sandromic.Controllers
     {
         public ActionResult Index()
         {
+            Data.GetData();
             return View();
         }
 

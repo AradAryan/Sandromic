@@ -70,6 +70,7 @@
     <Compile Include="Corporate.cs">
       <DependentUpon>Sandromic.tt</DependentUpon>
     </Compile>
+    <Compile Include="Data.cs" />
     <Compile Include="Sandromic.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
