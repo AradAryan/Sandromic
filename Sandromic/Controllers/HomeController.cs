@@ -12,8 +12,29 @@ namespace Sandromic.Controllers
     {
         public ActionResult Index()
         {
+            var list = Data.GetData();
+            var output = Json(
+                new
+                {
+                    Data = list,
+                    Total = list.Count
+                },
+                JsonRequestBehavior.AllowGet);
 
-            return View();
+            return output;
+        }
+        public ActionResult Search(UserModel searchModel, int skip = 0, int take = 10)
+        {
+            var list = Data.GetData();
+            var output = Json(
+                new
+                {
+                    Data = list,
+                    Total = list.Count
+                },
+                JsonRequestBehavior.AllowGet);
+
+            return output;
         }
 
         public ActionResult About()
